@@ -38,7 +38,7 @@
 
                         if (mysqli_num_rows($result1) > 0) {
                             echo '<select name="sclass">
-                        // <option value="" selected disabled>Select Class</option>';
+                        //  <option value="" selected disabled>Select Class</option>';
                             while ($row1 = mysqli_fetch_assoc($result1)) {
                                 if ($row['sclass'] == $row1['cid']) {
                                     $select = "selected";

@@ -15,7 +15,7 @@
             <select name="class">
                 <option value="" selected disabled>Select Class</option>
                 <?php
-                $connect = mysqli_connect("localhost", "root", "", "crud") or die("connection failed!");
+                include 'config.php';
                 $sql = "SELECT * FROM studentclass";
                 $result = mysqli_query($connect, $sql) or die("Query Unsuccessful.");
                 while ($row = mysqli_fetch_assoc($result)) {
